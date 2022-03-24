@@ -25,11 +25,13 @@
 </head>
 <body>
     <main id="app">
-        <div class="container">
-            <h3></h3>
-            <ul>
-                <li class="list-unstyled"v-for="email in emails">{{ email }}</li>
-            </ul>
+        <div class="container m-5 d-flex justify-content-center">
+            <div class="list shadow d-flex flex-column p-5">
+                <h5 class="text-uppercase">Email list</h5>
+                <ol class="ps-0">
+                    <li v-for="email in emails">{{ email }}</li>
+                </ol>
+            </div>
         </div>
     </main>
 
