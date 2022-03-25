@@ -27,10 +27,10 @@
     <main id="app">
         <div class="container m-5 d-flex justify-content-center">
             <div class="list shadow d-flex flex-column p-5">
-                <h5 class="text-uppercase">Email list</h5>
-                <ol class="ps-0">
-                    <li v-for="email in emails">{{ email }}</li>
-                </ol>
+                <h5 class="text-uppercase mb-3">Email list</h5>
+                <ul class="ps-0 list-unstyled">
+                    <li if="emails.length == 0" v-for="email in emails">{{ email }}</li>
+                </ul>
             </div>
         </div>
     </main>
